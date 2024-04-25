@@ -34,7 +34,7 @@ namespace WordSearch.Controllers
 
             return Ok(json);
         }*/
-        [HttpGet, Route("search")]
+        [HttpGet, Route("files/search")]
         public async Task<IActionResult> SearchWordAsync([FromQuery] string word)
         {
             SearchWord searchWord = new SearchWord();
